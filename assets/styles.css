@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Jacquard+24&family=Lugrasimo&display=swap");
+body {
+  background: linear-gradient(#5bc0de, #007bff);
+  width: 100%;
+  height: 100%;
+}
+
+h2 {
+  font-family: "Lugrasimo";
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addTask {
+  display: flex;
+  flex-direction: column;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  border: 2px solid #090909;
+  border-radius: 30px;
+  padding: 20px;
+  width: 600px;
+  box-shadow: 20px 20px 20px 10px rgba(20, 22, 24, 0.5);
+  height: 400px;
+  overflow-y: auto;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.todo-container #taskInput {
+  width: 200px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0d0c0c;
+  border: solid 1px rgb(44, 140, 224);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.todo-container #submit-button {
+  width: 100px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #4CAF50; /* Verde */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.todo-container #delete-completed-button {
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #d31111;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 150px;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .todo-container {
+    width: auto;
+    max-width: 300px;
+  }
+}
+#taskList {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+  margin-right: 100px;
+  font-family: "Lugrasimo";
+}
+
+input[type=checkbox] {
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 10px;
+  accent-color: green;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: red;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #888;
+}
+
+input[type=checkbox] {
+  width: 1.3em;
+  height: 1.3em;
+  margin-right: 10px;
+  accent-color: green;
+}/*# sourceMappingURL=styles.css.map */
